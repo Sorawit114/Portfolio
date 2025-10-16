@@ -30,7 +30,7 @@ export default function Hero({ onViewProjectsClick, onViewContactClick, id }) {
               : "text-4xl sm:text-5xl md:text-7xl"
           }`}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 drop-shadow-lg">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400 drop-shadow-lg">
             Sorawit Kamboonlue
           </span>
         </h1>
