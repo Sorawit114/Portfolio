@@ -70,7 +70,7 @@ const Projects = forwardRef(({ selectedSkill, id }, ref) => {
         {filteredProjects.map((p) => (
           <div
             key={p.title}
-            className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow hover:scale-105 transition"
+            className="p-6 bg-white rounded-2xl shadow hover:scale-105 transition"
           >
             <h3 className="text-xl font-semibold">{p.title}</h3>
             <p className="mt-2">{p.desc}</p>

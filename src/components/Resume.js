@@ -53,7 +53,7 @@ export default function Resume({ id }) {
       </h2>
 
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 px-4 sm:px-0">
-        <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow hover:scale-105 transition">
+        <div className="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">
           <div className="w-full aspect-[16/9] overflow-hidden rounded-lg mb-4">
             <img
               src="/CDG.png"
@@ -61,15 +61,15 @@ export default function Resume({ id }) {
               className="w-full h-full object-cover"
             />
           </div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-xl font-semibold text-gray-900 ">
             CDG Hackathon
           </h3>
-          <p className="mt-2 text-gray-700 dark:text-gray-300">
+          <p className="mt-2 text-gray-700">
             Participated in team projects solving real-world challenges.
           </p>
         </div>
 
-        <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow hover:scale-105 transition">
+        <div className="p-6 bg-white rounded-2xl shadow hover:scale-105 transition">
           <div className="w-full aspect-[16/9] overflow-hidden rounded-lg mb-4">
             <img
               src="/Tokiomarine.JPEG"
@@ -77,10 +77,10 @@ export default function Resume({ id }) {
               className="w-full h-full object-cover"
             />
           </div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-xl font-semibold text-gray-900">
             Tokio Marine Hackathon
           </h3>
-          <p className="mt-2 text-gray-700 dark:text-gray-300">
+          <p className="mt-2 text-gray-700">
             Worked collaboratively to develop innovative solutions.
           </p>
         </div>

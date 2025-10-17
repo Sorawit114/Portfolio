@@ -30,7 +30,13 @@ export default function Hero({ onViewProjectsClick, onViewContactClick, id }) {
               : "text-4xl sm:text-5xl md:text-7xl"
           }`}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400 drop-shadow-lg">
+          <span
+            className="bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400 drop-shadow-lg -webkit-text-stroke-1px-black"
+            style={{
+              WebkitTextStrokeWidth: "1px",
+              WebkitTextStrokeColor: "black",
+            }}
+          >
             Sorawit Kamboonlue
           </span>
         </h1>

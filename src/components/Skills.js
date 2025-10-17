@@ -52,7 +52,7 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
             className={`p-6 rounded-2xl shadow hover:scale-105 transition cursor-pointer ${
               selectedSkill === skill.name
                 ? "bg-purple-600 text-white"
-                : "bg-white dark:bg-gray-800"
+                : "bg-white"
             }`}
           >
             {skill.icon.startsWith("/icons/") ? (
