@@ -24,18 +24,20 @@ export default function Hero({ onViewProjectsClick, onViewContactClick, id }) {
         </h1>
 
         <h1
-          className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-purple-400 to-purple-600 text-6xl sm:text-7xl md:text-8xl transition-all duration-700 z-50 ${
+          className={`font-extrabold text-white transition-all duration-700 z-50 ${
             scrolled
-              ? "fixed top-6 left-4 md:left-8 text-2xl sm:text-3xl md:text-4xl"
-              : ""
+              ? "fixed top-6 left-4 md:left-8 text-xl sm:text-2xl md:text-3xl"
+              : "text-4xl sm:text-5xl md:text-7xl"
           }`}
-          style={{
-            textShadow:
-              "0 0 8px rgba(128, 90, 213, 0.5), 0 0 12px rgba(128, 90, 213, 0.3)",
-            lineHeight: "1.1",
-          }}
         >
-          Sorawit Kamboonlue
+          <span
+            className="bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-purple-400"
+            style={{
+              textShadow: "0 0 8px rgba(128, 90, 213, 0.5), 0 0 12px rgba(128, 90, 213, 0.3)",
+            }}
+          >
+            Sorawit Kamboonlue
+          </span>
         </h1>
 
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
