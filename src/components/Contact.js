@@ -59,7 +59,7 @@ const Contact = forwardRef(({ id }, ref) => {
       ref={ref}
       className="py-20 px-6 max-w-4xl mx-auto text-gray-100"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">Contact Me</h2>
 
       <div className="grid md:grid-cols-3 gap-8 text-center mb-12">
         <div className="bg-gray-800 rounded-xl p-6 shadow hover:shadow-lg transition min-w-0 break-words">
