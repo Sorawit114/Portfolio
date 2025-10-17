@@ -4,7 +4,7 @@ export default function Resume({ id }) {
   return (
     <section
       id={id}
-      className="py-16 px-6 max-w-4xl mx-auto text-center text-white"
+      className="py-16 px-6 max-w-6xl mx-auto text-center text-white"
     >
       <h2 className="text-3xl font-bold mb-8 text-purple-400">About Me</h2>
 
