@@ -25,15 +25,15 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
   }, [filter]);
 
   return (
-    <section id={id} className="py-16 px-6 max-w-8xl mx-auto text-center">
+    <section id={id} className="py-16 px-6 max-w-5xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-8 text-purple-400">Skills</h2>
 
-      <div className="flex justify-center gap-4 mb-10">
+      <div className="flex flex-wrap justify-center gap-4 mb-12">
         {["All", "Language", "Tool"].map((cat) => (
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-4 py-2 rounded-lg border transition ${
+            className={`px-5 py-2 rounded-full border transition font-medium ${
               filter === cat
                 ? "bg-purple-600 text-white border-purple-600"
                 : "border-purple-400 text-purple-300 hover:bg-purple-800/40"
@@ -44,12 +44,12 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
         {filteredSkills.map((skill) => (
           <div
             key={skill.name}
             onClick={() => onSkillClick(skill.name)}
-            className={`p-4 rounded-xl shadow hover:shadow-lg transition cursor-pointer ${
+            className={`p-6 rounded-2xl shadow-lg hover:shadow-xl transition cursor-pointer ${
               selectedSkill === skill.name
                 ? "bg-purple-600 text-white"
                 : "bg-gray-900 text-white"
@@ -59,12 +59,12 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
               <img
                 src={skill.icon}
                 alt={skill.name}
-                className="w-16 h-16 mx-auto"
+                className="w-20 h-20 mx-auto mb-3"
               />
             ) : (
-              <i className={`${skill.icon} text-5xl`}></i>
+              <i className={`${skill.icon} text-6xl mb-3`}></i>
             )}
-            <p className="mt-2 font-semibold">{skill.name}</p>
+            <p className="mt-2 font-semibold text-lg">{skill.name}</p>
           </div>
         ))}
       </div>
