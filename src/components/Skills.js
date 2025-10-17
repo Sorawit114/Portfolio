@@ -29,8 +29,10 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
   }, [filter]);
 
   return (
-    <section id={id} className="py-20 px-6 text-center">
-      <h2 className="text-3xl font-bold mb-10 text-purple-400">Skills</h2>
+    <section id={id} className="py-16 sm:py-20 px-4 sm:px-6 text-center">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-purple-400">
+        Skills
+      </h2>
 
       <div className="flex justify-center gap-4 mb-10">
         {["All", "Language", "Tool"].map((cat) => (
@@ -48,12 +50,12 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         {filteredSkills.map((skill) => (
           <div
             key={skill.name}
             onClick={() => onSkillClick(skill.name)}
-            className={`p-6 rounded-2xl shadow hover:scale-105 transition cursor-pointer ${
+            className={`p-4 rounded-2xl shadow hover:scale-105 transition cursor-pointer ${
               selectedSkill === skill.name
                 ? "bg-purple-600 text-white"
                 : "bg-gray-900 text-white"

@@ -2,12 +2,15 @@
 
 export default function Resume({ id }) {
   return (
-    <section id={id} className="py-20 px-4 sm:px-8 text-center text-white">
-      <h2 className="text-3xl sm:text-3xl font-bold mb-6 text-purple-400">
+    <section
+      id={id}
+      className="py-16 sm:py-20 px-4 sm:px-6 text-center text-white"
+    >
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-purple-400">
         About Me
       </h2>
 
-      <div className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 mb-8">
+      <div className="max-w-2xl sm:max-w-3xl lg:max-w-4xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed text-gray-300 mb-10">
         <p>
           I am a Computer Engineering student with hands-on experience in
           developing web and mobile applications using technologies such as{" "}
@@ -28,7 +31,7 @@ export default function Resume({ id }) {
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
         <a
           href="/Resume.pdf"
           target="_blank"
@@ -48,12 +51,12 @@ export default function Resume({ id }) {
         </a>
       </div>
 
-      <h2 className="text-2xl sm:text-3xl font-bold mt-24 mb-10 text-purple-400">
+      <h2 className="text-2xl sm:text-3xl font-bold mt-16 mb-10 text-purple-400">
         Experience
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 px-4 sm:px-0">
-        <div className="p-6 bg-gray-900 rounded-2xl shadow hover:scale-105 transition">
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 px-2 sm:px-0">
+        <div className="p-4 bg-gray-900 rounded-2xl shadow hover:scale-105 transition">
           <div className="w-full aspect-[16/9] overflow-hidden rounded-lg mb-4">
             <img
               src="/CDG.png"
@@ -67,7 +70,7 @@ export default function Resume({ id }) {
           </p>
         </div>
 
-        <div className="p-6 bg-gray-900 rounded-2xl shadow hover:scale-105 transition">
+        <div className="p-4 bg-gray-900 rounded-2xl shadow hover:scale-105 transition">
           <div className="w-full aspect-[16/9] overflow-hidden rounded-lg mb-4">
             <img
               src="/Tokiomarine.JPEG"
