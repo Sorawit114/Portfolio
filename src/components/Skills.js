@@ -7,7 +7,11 @@ const skills = [
   { name: "React", icon: "devicon-react-original colored", type: "Language" },
   { name: "PHP", icon: "devicon-php-plain colored", type: "Language" },
   { name: "Next js", icon: "/icons/next-logo.png", type: "Language" },
-  { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored", type: "Tool"},
+  {
+    name: "Tailwind CSS",
+    icon: "devicon-tailwindcss-plain colored",
+    type: "Tool",
+  },
   { name: "Docker", icon: "devicon-docker-plain colored", type: "Tool" },
   { name: "MySQL", icon: "devicon-mysql-plain colored", type: "Tool" },
   { name: "GitHub", icon: "/icons/git-logo.png", type: "Tool" },
@@ -26,7 +30,7 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
 
   return (
     <section id={id} className="py-20 px-6 text-center">
-      <h2 className="text-3xl font-bold mb-10">Skills</h2>
+      <h2 className="text-3xl font-bold mb-10 text-purple-400">Skills</h2>
 
       <div className="flex justify-center gap-4 mb-10">
         {["All", "Language", "Tool"].map((cat) => (
@@ -52,7 +56,7 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
             className={`p-6 rounded-2xl shadow hover:scale-105 transition cursor-pointer ${
               selectedSkill === skill.name
                 ? "bg-purple-600 text-white"
-                : "bg-white"
+                : "bg-gray-900 text-white"
             }`}
           >
             {skill.icon.startsWith("/icons/") ? (
