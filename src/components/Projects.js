@@ -64,15 +64,15 @@ const Projects = forwardRef(({ selectedSkill, id }, ref) => {
     : allProjects;
 
   return (
-    <section id={id} ref={ref} className="py-16 sm:py-20 px-4 sm:px-6">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-purple-400">
+    <section id={id} ref={ref} className="py-16 px-6 max-w-4xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-10 text-purple-400">
         Projects
       </h2>
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 sm:px-4">
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {filteredProjects.map((p) => (
           <div
             key={p.title}
-            className="p-4 bg-gray-900 rounded-2xl shadow hover:scale-105 transition"
+            className="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg transition"
           >
             <h3 className="text-xl font-semibold text-white">{p.title}</h3>
             <p className="mt-2 text-gray-300">{p.desc}</p>
@@ -104,5 +104,4 @@ const Projects = forwardRef(({ selectedSkill, id }, ref) => {
 });
 
 Projects.displayName = "Projects";
-
 export default Projects;
