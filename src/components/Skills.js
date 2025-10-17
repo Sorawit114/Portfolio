@@ -25,7 +25,7 @@ export default function Skills({ onSkillClick, selectedSkill, id }) {
   }, [filter]);
 
   return (
-    <section id={id} className="py-16 px-6 max-w-6xl mx-auto text-center">
+    <section id={id} className="py-16 px-6 max-w-8xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-8 text-purple-400">Skills</h2>
 
       <div className="flex justify-center gap-4 mb-10">

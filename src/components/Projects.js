@@ -68,7 +68,7 @@ const Projects = forwardRef(({ selectedSkill, id }, ref) => {
       <h2 className="text-3xl font-bold text-center mb-10 text-purple-400">
         Projects
       </h2>
-      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((p) => (
           <div
             key={p.title}
